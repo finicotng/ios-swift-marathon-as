@@ -12,13 +12,13 @@ println("An Int64 range of numbers:\t from \(Int64.min) to \(Int64.max)")
 println("An UInt64 range of numbers:\t from \(UInt64.min) to \(UInt64.max)\n")
 
 // sum sum sum
-let firstNumber : Int = 7
+let firstNumber = 7
 let secondNumber : Float = 33.73
-let thirdNumber : Double = 88364.9629
+let thirdNumber = 88364.9629
 
-let intSum : Int = firstNumber + Int(secondNumber) + Int(thirdNumber)
-let floatSum : Float = Float(firstNumber) + secondNumber + Float(thirdNumber)
-let doubleSum : Double = Double(firstNumber) + Double(secondNumber) + thirdNumber
+let intSum = Int(Double(firstNumber) + Double(secondNumber) + thirdNumber)
+let floatSum = Float(firstNumber) + secondNumber + Float(thirdNumber)
+let doubleSum = Double(firstNumber) + Double(secondNumber) + thirdNumber
 
 // compare double and int amounts
 if Double(intSum) < doubleSum {
