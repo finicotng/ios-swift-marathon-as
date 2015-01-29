@@ -81,7 +81,7 @@ if responseWithoutStatus.message != nil {
 
 println("\npart 3: students\n")
 
-let studentTpl : (name:String?, machineNumber:String?, mark:Int?) = (nil, nil, nil)
+let studentTpl : (name:String!, machineNumber:String?, mark:Int?)
 
 var student1 = studentTpl
 var student2 = studentTpl
@@ -102,95 +102,90 @@ student1.mark = 5
 student3.mark = 5
 student4.mark = 3
 
-if student1.name != nil {
-    var studentDesc = "the student \(student1.name!) "
+var student1Desc = "the student \(student1.name!) "
 
-    if student1.machineNumber != nil {
-        studentDesc += "has a car with the number \(student1.machineNumber!). "
-    } else {
-        studentDesc += "doesn't have a car. "
-    }
-    
-    if student1.mark != nil {
-        studentDesc += "\(student1.name!) passed the test and had the mark \(student1.mark!)."
-    } else {
-        studentDesc += "\(student1.name!) didn't come to test."
-    }
-    
-    println(studentDesc)
+if student1.machineNumber != nil {
+    student1Desc += "has a car with the number \(student1.machineNumber!). "
+} else {
+    student1Desc += "doesn't have a car. "
 }
 
-if let stud2 = student2.name {
-    var studentDesc = "the student \(stud2) "
-    
-    if student2.machineNumber != nil {
-        studentDesc += "has a car with the number \(student2.machineNumber!). "
-    } else {
-        studentDesc += "doesn't have a car. "
-    }
-    
-    if student2.mark != nil {
-        studentDesc += "\(stud2) passed the test and had the mark \(student2.mark!)."
-    } else {
-        studentDesc += "\(stud2) didn't come to test."
-    }
-    
-    println(studentDesc)
+if student1.mark != nil {
+    student1Desc += "\(student1.name!) passed the test and had the mark \(student1.mark!)."
+} else {
+    student1Desc += "\(student1.name!) didn't come to test."
 }
 
+println(student1Desc)
 
-if let stud3 = student3.name {
-    var studentDesc = "the student \(stud3) "
-    
-    if student3.machineNumber != nil {
-        studentDesc += "has a car with the number \(student3.machineNumber!). "
-    } else {
-        studentDesc += "doesn't have a car. "
-    }
-    
-    if student3.mark != nil {
-        studentDesc += "\(stud3) passed the test and had the mark \(student3.mark!)."
-    } else {
-        studentDesc += "\(stud3) didn't come to test."
-    }
-    
-    println(studentDesc)
+
+var student2Desc = "the student \(student2.name) "
+
+if student2.machineNumber != nil {
+    student2Desc += "has a car with the number \(student2.machineNumber!). "
+} else {
+    student2Desc += "doesn't have a car. "
 }
 
-if student4.name != nil {
-    var studentDesc = "the student \(student4.name!) "
-    
-    if student4.machineNumber != nil {
-        studentDesc += "has a car with the number \(student4.machineNumber!). "
-    } else {
-        studentDesc += "doesn't have a car. "
-    }
-    
-    if student4.mark != nil {
-        studentDesc += "\(student4.name!) passed the test and had the mark \(student4.mark!)."
-    } else {
-        studentDesc += "\(student4.name!) didn't come to test."
-    }
-    
-    println(studentDesc)
+if student2.mark != nil {
+    student2Desc += "\(student2.name) passed the test and had the mark \(student2.mark!)."
+} else {
+    student2Desc += "\(student2.name) didn't come to test."
 }
 
-if let stud5 = student5.name {
-    var studentDesc = "the student \(stud5) "
-    
-    if student5.machineNumber != nil {
-        studentDesc += "has a car with the number \(student5.machineNumber!). "
-    } else {
-        studentDesc += "doesn't have a car. "
-    }
-    
-    if student5.mark != nil {
-        studentDesc += "\(stud5) passed the test and had the mark \(student5.mark!)."
-    } else {
-        studentDesc += "\(stud5) didn't come to test."
-    }
-    
-    println(studentDesc)
+println(student2Desc)
+
+
+var student3Desc = "the student \(student3.name) "
+
+if student3.machineNumber != nil {
+    student3Desc += "has a car with the number \(student3.machineNumber!). "
+} else {
+    student3Desc += "doesn't have a car. "
 }
+
+if student3.mark != nil {
+    student3Desc += "\(student3.name) passed the test and had the mark \(student3.mark!)."
+} else {
+    student3Desc += "\(student3.name) didn't come to test."
+}
+
+println(student3Desc)
+
+
+var student4Desc = "the student \(student4.name!) "
+
+if student4.machineNumber != nil {
+    student4Desc += "has a car with the number \(student4.machineNumber!). "
+} else {
+    student4Desc += "doesn't have a car. "
+}
+
+if student4.mark != nil {
+    student4Desc += "\(student4.name!) passed the test and had the mark \(student4.mark!)."
+} else {
+    student4Desc += "\(student4.name!) didn't come to test."
+}
+
+println(student4Desc)
+
+
+var student5Desc = "the student \(student5.name) "
+
+if student5.machineNumber != nil {
+    student5Desc += "has a car with the number \(student5.machineNumber!). "
+} else {
+    student5Desc += "doesn't have a car. "
+}
+
+if student5.mark != nil {
+    student5Desc += "\(student5.name) passed the test and had the mark \(student5.mark!)."
+} else {
+    student5Desc += "\(student5.name) didn't come to test."
+}
+
+println(student5Desc)
+
+
 
 // I would like to replace this code with the function in a loop, but I don't know how to do it
