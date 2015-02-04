@@ -14,3 +14,4 @@ The author of the course - Alex Skutarenko
 5. Basic Operators
 6. Strings and Characters
 7. Collection Types: Arrays
+8. Collection Types: Dictionaries
