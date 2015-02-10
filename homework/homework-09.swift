@@ -34,3 +34,18 @@ switch age {
     case _ where age > 65: println("пожилой возраст")
     default: break
 }
+
+// 3
+
+let student = (firstName: "Поликарп", lastName: "Семафоркин", middleName: "Бедросович")
+
+switch student.firstName[student.firstName.startIndex] {
+    case "А", "О":
+        println("К доске, \(student.firstName)!")
+    case _ where student.middleName.hasPrefix("В") || student.middleName.hasPrefix("Д"):
+        println("К доске, \(student.firstName) \(student.middleName)!")
+    case _ where student.lastName.hasPrefix("Е") || student.lastName.hasPrefix("З"):
+        println("К доске, \(student.lastName)!")
+    default:
+        println("К доске, \(student.lastName) \(student.firstName) \(student.middleName)")
+}
